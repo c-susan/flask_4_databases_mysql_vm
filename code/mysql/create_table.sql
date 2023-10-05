@@ -1,3 +1,5 @@
+## Script to create a doctors table and a patients table into the database. 
+
 CREATE TABLE doctors(
 	doctor_id INT PRIMARY KEY AUTO_INCREMENT,
     first_name TEXT NOT NULL, 
