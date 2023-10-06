@@ -1,7 +1,7 @@
 ## Script to create a doctors table and a patients table into the database. 
 
 CREATE TABLE doctors(
-	doctor_id INT PRIMARY KEY AUTO_INCREMENT,
+    doctor_id INT PRIMARY KEY AUTO_INCREMENT,
     first_name TEXT NOT NULL, 
     last_name TEXT NOT NULL, 
     department TEXT NOT NULL, 
@@ -9,7 +9,7 @@ CREATE TABLE doctors(
 );
 
 CREATE TABLE patients(
-	patient_id INT PRIMARY KEY AUTO_INCREMENT, 
+    patient_id INT PRIMARY KEY AUTO_INCREMENT, 
     first_name TEXT NOT NULL, 
     last_name TEXT NOT NULL, 
     date_of_birth DATE,
