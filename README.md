@@ -38,6 +38,8 @@ Python-dotenv could not parse statement starting at line 6
 ```
 sqlalchemy.exc.ObjectNotExecutableError: Not an executable object: 'SELECT * FROM patients'
 ```
+<img width="1406" alt="Screenshot 2023-10-06 at 6 02 55 PM" src="https://github.com/c-susan/flask_4_databases_mysql_vm/assets/123512714/915dd98c-5a00-4840-bbe3-97f57b08cb69">
+
 
    **More work will be done to address this error**
 
