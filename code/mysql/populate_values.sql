@@ -1,7 +1,7 @@
 ##Fake sample data is inserted into the doctors and patients tables. 
 
 INSERT INTO doctors(
-	first_name, 
+    first_name, 
     last_name, 
     department, 
     phone_num)
@@ -13,7 +13,7 @@ VALUES
 ('Sophia', 'Williams', 'General Medicine', '7777777777'); 
 
 INSERT INTO patients(
-	first_name,
+    first_name,
     last_name,
     date_of_birth,
     primary_doctor_id)
