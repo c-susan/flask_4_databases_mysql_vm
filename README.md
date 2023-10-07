@@ -4,7 +4,8 @@ HHA504 / Cloud Computing / Assignment 4b / MySQL on VMs
 This repo focus on setting up and running MySQL on a cloud Virtual Machine. A VM was set up using Microsoft Azure. Flask is then connected to the MySQL instance to display the data from the database. 
 
 ## This repo contains the following: 
-+ A **code** file contaning code of the MySQL database setup, python script for the facilitaing the connection between Flask and MySQL, script to diasplay the data.
++ A **code** folder contaning code of the MySQL database setup, python script for the facilitaing the connection between Flask and MySQL, script to diasplay the data.
++ A **screenshots** folder containing screenshots of the database tables and entity relationship diagram (ERD).
 + A **README.md** containing an overview of the repo and assignment.
 
 # Documentation
