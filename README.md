@@ -38,9 +38,14 @@ Python-dotenv could not parse statement starting at line 6
 ```
 sqlalchemy.exc.ObjectNotExecutableError: Not an executable object: 'SELECT * FROM patients'
 ```
-<img width="1406" alt="Screenshot 2023-10-06 at 6 02 55 PM" src="https://github.com/c-susan/flask_4_databases_mysql_vm/assets/123512714/915dd98c-5a00-4840-bbe3-97f57b08cb69">
+<img width="600" alt="Screenshot 2023-10-06 at 6 02 55 PM" src="https://github.com/c-susan/flask_4_databases_mysql_vm/assets/123512714/915dd98c-5a00-4840-bbe3-97f57b08cb69">
 
+4. To address the error message, I imported ```text``` from ```sqlalchemy``` and changed the queries by writing as a text object:
+            ```
+            query1 = text('SELECT * FROM patients')
+            query2 = text('SELECT * FROM doctors')
+            ```
+5. The .py file was successfully ran, however, the tables from the database is not showing up on the Flask app: 
 
-   **More work will be done to address this error**
 
 
