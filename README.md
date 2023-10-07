@@ -40,12 +40,11 @@ sqlalchemy.exc.ObjectNotExecutableError: Not an executable object: 'SELECT * FRO
 ```
 <img width="600" alt="Screenshot 2023-10-06 at 6 02 55 PM" src="https://github.com/c-susan/flask_4_databases_mysql_vm/assets/123512714/915dd98c-5a00-4840-bbe3-97f57b08cb69">
 
-4. To address the error message, I imported ```text``` from ```sqlalchemy``` and changed the queries by writing as a text object:
+4. To address the error message, I imported ```text``` from ```sqlalchemy``` and changed the queries by writing as a text object. For example: 
             ```
             query1 = text('SELECT * FROM patients')
-            query2 = text('SELECT * FROM doctors')
             ```
-5. The .py file was successfully ran, however, the tables from the database is not showing up on the Flask app: 
+6. The .py file was successfully ran, however, the tables from the database is not showing up on the Flask app: 
+<img width="350" alt="Screenshot 2023-10-06 at 10 59 59 PM" src="https://github.com/c-susan/flask_4_databases_mysql_vm/assets/123512714/3c55334f-1abf-44e3-ae97-b7dc3e76baa3">
 
-
-
+  **More work will be done to address this error**
