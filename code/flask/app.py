@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from sqlalchemy import create_engine 
+from sqlalchemy import create_engine, text 
 import os
 from dotenv import load_dotenv
 
@@ -27,11 +27,11 @@ def display_data():
     # Establish a database connection
     with engine.connect() as connection:
         # Execute an SQL query to fetch data (replace this with your query)
-        #query1 = 'SELECT * FROM patients'
-        #query2 = 'SELECT * FROM doctors'
+        query1 = text('SELECT * FROM patients')
+        query2 = text('SELECT * FROM doctors')
 
-        result1 = connection.execute(f"""SELECT * FROM patients""")
-        result2 = connection.execute(f"""SELECT * FROM doctors""")
+        result1 = connection.execute(query1)
+        result2 = connection.execute(query2)
 
         # Fetch all rows of data
         db_data1 = result1.fetchall()
