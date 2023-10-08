@@ -5,7 +5,7 @@ This repo focus on setting up and running MySQL on a cloud Virtual Machine. A VM
 
 ## This repo contains the following: 
 + A **code** folder contaning code of the MySQL database setup, python script for the facilitaing the connection between Flask and MySQL, script to diasplay the data.
-+ A **screenshots** folder containing screenshots of the database tables and entity relationship diagram (ERD).
++ A **screenshots** folder containing screenshots of the database tables, and entity relationship diagram (ERD) of the database, and a screenshot of the working Flask app.
 + A **README.md** containing an overview of the repo and assignment.
 
 # Documentation
