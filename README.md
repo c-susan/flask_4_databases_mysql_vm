@@ -9,7 +9,7 @@ This repo focus on setting up and running MySQL on a cloud Virtual Machine. A VM
   + database tables
   + entity relationship diagram (ERD) of the database
   + a screenshot of the tables side-by-side on the Flask app
-  + screenshot of the database tables on different pages on Flask 
+  + screenshots of the database tables on different pages on Flask 
 + A **README.md** containing an overview of the repo and assignment.
 
 # Documentation
