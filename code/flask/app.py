@@ -28,7 +28,7 @@ def index():
 
 
 @app.route('/patients')
-def doctors():
+def patients():
     # Establish a database connection
     with engine.connect() as connection:
         # Execute an SQL query to fetch data (replace this with your query)
@@ -42,7 +42,7 @@ def doctors():
     return render_template('patients.html', data1=db_data1)
 
 @app.route('/doctors')
-def patients():
+def doctors():
     # Establish a database connection
     with engine.connect() as connection:
         # Execute an SQL query to fetch data (replace this with your query)
