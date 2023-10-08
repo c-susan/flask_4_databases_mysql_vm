@@ -23,33 +23,61 @@
         </nav>
     </header>
 
-
-
     <main class="p-4">
-
         {% block content %}
         <section class="mb-6">
             <h2 class="text-l mb-2">Doctors Table</h2>
-            <ul>
-                {% for doctor in doctor_data %}
-                    <li>{{ doctor.first_name }} - {{ doctor.last_name }} - {{ doctor.department }} - {{ doctor.phone_num }}</li>
-                {% endfor %}
-            </ul>
+            <table class="table-auto">
+                <thead>
+                    <tr>
+                        <th class="px-4 py-2">Doctor ID</th>
+                        <th class="px-4 py-2">First Name</th>
+                        <th class="px-4 py-2">Last Name</th>
+                        <th class="px-4 py-2">Department</th>
+                        <th class="px-4 py-2">Phone Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for doctor in data2 %}
+                    <tr>
+                        <td class="border px-4 py-2">{{ doctor.doctor_id }}</td>
+                        <td class="border px-4 py-2">{{ doctor.first_name }}</td>
+                        <td class="border px-4 py-2">{{ doctor.last_name }}</td>
+                        <td class="border px-4 py-2">{{ doctor.department }}</td>
+                        <td class="border px-4 py-2">{{ doctor.phone_num }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
         </section>
 
         <section class="mb-6">
             <h2 class="text-l mb-2">Patients Table</h2>
-            <ul>
-                {% for patient in patient_data %}
-                    <li>{{ patient.first_name }} - {{ patient.last_name }} - DOB: {{ patient.date_of_birth }}</li>
-                {% endfor %}
-            </ul>
+            <table class="table-auto">
+                <thead>
+                    <tr>
+                        <th class="px-4 py-2">Patient ID</th>
+                        <th class="px-4 py-2">First Name</th>
+                        <th class="px-4 py-2">Last Name</th>
+                        <th class="px-4 py-2">Date of Birth</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for patient in data1 %}
+                    <tr>
+                        <td class="border px-4 py-2">{{ patient.patient_id }}</td>
+                        <td class="border px-4 py-2">{{ patient.first_name }}</td>
+                        <td class="border px-4 py-2">{{ patient.last_name }}</td>
+                        <td class="border px-4 py-2">{{ patient.date_of_birth }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
         </section>
 
         <br/>
 
         {% endblock %}
-
     </main>
 
     <footer class="bg-blue-600 text-white p-4 mt-6">
