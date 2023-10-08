@@ -25,8 +25,8 @@ This repo focus on setting up and running MySQL on a cloud Virtual Machine. A VM
 In MySQL workbench, I created a new database called ```database``` and created 2 tables called ```patient``` and ```doctors```. The ```doctors``` contained columns for the doctor ID, their first and last name, and department they work in. The ```patient``` table contained columns for the patient ID, first and last name, date of birth, and primary doctor ID, with patient ID as a primary key and primary doctor ID as a foreign key referencing the doctor ID in the doctors table. Sample data was added to the tables using ```INSERT INTO```. The doctors table has a one to many relationship the the patients table. 
  
 ### Flask Integration 
-1. A Flask application was created to connect to the MySQL instance using SQLAlchemy. A ```.env``` file was also created contain the database credentials along with a ```.gitignore``` file. The script can be found in code/flask folder of the repo.
-2. The Flask application was ran to connect to the MySQL instance, however an error message was returned:
+**1.** A Flask application was created to connect to the MySQL instance using SQLAlchemy. A ```.env``` file was also created contain the database credentials along with a ```.gitignore``` file. The script can be found in code/flask folder of the repo.
+**2.** The Flask application was ran to connect to the MySQL instance, however an error message was returned:
 ```
 Python-dotenv could not parse statement starting at line 1
 Python-dotenv could not parse statement starting at line 2
@@ -35,17 +35,16 @@ Python-dotenv could not parse statement starting at line 4
 Python-dotenv could not parse statement starting at line 5
 Python-dotenv could not parse statement starting at line 6
 ```
-3. With these first error message, I had to edit the ```.env``` file. The python file was ran again and was successful in connecting to MySQL, however a new error message was shown the the Flask application test environment:
+**3.** With these first error message, I had to edit the ```.env``` file. The python file was ran again and was successful in connecting to MySQL, however a new error message was shown the the Flask application test environment:
 ```
 sqlalchemy.exc.ObjectNotExecutableError: Not an executable object: 'SELECT * FROM patients'
 ```
 <img width="600" alt="Screenshot 2023-10-06 at 6 02 55 PM" src="https://github.com/c-susan/flask_4_databases_mysql_vm/assets/123512714/915dd98c-5a00-4840-bbe3-97f57b08cb69">
 
-4. To address the error message, I imported ```text``` from ```sqlalchemy``` and changed the queries by writing as a text object. For example: 
+**4.** To address the error message, I imported ```text``` from ```sqlalchemy``` and changed the queries by writing as a text object. For example: 
             ```
             query1 = text('SELECT * FROM patients')
             ```
-6. The .py file was successfully ran, however, the tables from the database is not showing up on the Flask app: 
+**5**. The .py file was successfully ran, however, the tables from the database is not showing up on the Flask app: 
 <img width="350" alt="Screenshot 2023-10-06 at 10 59 59 PM" src="https://github.com/c-susan/flask_4_databases_mysql_vm/assets/123512714/3c55334f-1abf-44e3-ae97-b7dc3e76baa3">
-
-  **More work will be done to address this error**
+**6.** I edited the index.html file by changing the variable name to the correct variable and used ```<table>``` to put the database data in table format on the Flask application. 
