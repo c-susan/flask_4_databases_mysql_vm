@@ -23,21 +23,37 @@ engine = create_engine(
 app = Flask(__name__)
 
 @app.route('/')
-def display_data():
+def index():
+    return render_template('index.html')
+
+
+@app.route('/patients')
+def patients():
     # Establish a database connection
     with engine.connect() as connection:
         # Execute an SQL query to fetch data (replace this with your query)
         query1 = text('SELECT * FROM patients')
-        query2 = text('SELECT * FROM doctors')
 
         result1 = connection.execute(query1)
-        result2 = connection.execute(query2)
 
         # Fetch all rows of data
         db_data1 = result1.fetchall()
+
+    return render_template('patients.html', data1=db_data1)
+
+@app.route('/doctors')
+def doctors():
+    # Establish a database connection
+    with engine.connect() as connection:
+        # Execute an SQL query to fetch data (replace this with your query)
+        query2 = text('SELECT * FROM doctors')
+
+        result2 = connection.execute(query2)
+
+        # Fetch all rows of data
         db_data2 = result2.fetchall()
 
-    return render_template('index.html', data1=db_data1, data2 = db_data2)
+    return render_template('doctors.html', data2=db_data2)
 
 
 if __name__ == '__main__':
