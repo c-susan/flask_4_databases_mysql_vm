@@ -56,8 +56,8 @@ sqlalchemy.exc.ObjectNotExecutableError: Not an executable object: 'SELECT * FRO
 
 **6.** I edited the index.html file by changing the variable name to the correct variable and used ```<table>``` to put the database data in table format on the Flask application. 
 
-**7.** The code was successfully ran and a screenshot of the Flask app is located in the **screenshots** folder: **flask_app_screenshot.png**. The database tables were organized to be located side-by-side. 
+**7.** The code was successfully ran and a screenshot of the Flask app is located in the **<a href = "https://github.com/c-susan/flask_4_databases_mysql_vm/tree/main/screenshots">screenshots</a>** folder: **<a href="https://github.com/c-susan/flask_4_databases_mysql_vm/blob/main/screenshots/flask_app_screenshot.png">flask_app_screenshot.png</a>**. The database tables were organized to be located side-by-side. 
 
-**8.** I then changed the Flask app script to put the two database tables on separate pages and the screenshots are located in the **screenshots** folder:
-  + **flask_doctors_table.png**
-  + **flask_patients_table.png**
+**8.** I then changed the Flask app script to put the two database tables on separate pages and the screenshots are located in the **<a href = "https://github.com/c-susan/flask_4_databases_mysql_vm/tree/main/screenshots">screenshots</a>** folder:
+  + **<a href = "https://github.com/c-susan/flask_4_databases_mysql_vm/blob/main/screenshots/flask_doctors_table.png">flask_doctors_table.png</a>**
+  + **<a href = "https://github.com/c-susan/flask_4_databases_mysql_vm/blob/main/screenshots/flask_patients_table.png">flask_patients_table.png</a>**
