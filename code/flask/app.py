@@ -24,7 +24,20 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    # Establish a database connection
+    with engine.connect() as connection:
+        # Execute an SQL query to fetch data (replace this with your query)
+        query1 = text('SELECT * FROM patients')
+        query2 = text('SELECT * FROM doctors')
+
+        result1 = connection.execute(query1)
+        result2 = connection.execute(query2)
+
+        # Fetch all rows of data
+        db_data1 = result1.fetchall()
+        db_data2 = result2.fetchall()
+
+    return render_template('index.html', data1=db_data1, data2 = db_data2)
 
 
 @app.route('/patients')
