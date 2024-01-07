@@ -33,4 +33,3 @@ VALUES
 ('Harper', 'Wright', '2005-07-18', 4),
 ('Aiden', 'Green', '2002-11-01', 3),
 ('Charlotte', 'Parker', '2006-04-10', 5);
-
