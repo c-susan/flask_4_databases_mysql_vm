@@ -16,3 +16,4 @@ CREATE TABLE patients(
     primary_doctor_id INT,
     FOREIGN KEY (primary_doctor_id) REFERENCES doctors(doctor_id)
 );
+
